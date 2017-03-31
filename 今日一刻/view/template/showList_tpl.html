@@ -1,0 +1,19 @@
+<div class="author">
+    <h4 class="week">本周推荐</h4>
+    <dl  ng-repeat="(key,author) in datalist" ui-sref="author.detail">
+        <dt><img src="../images/tabIcon/author_1.png" alt=""></dt>
+        <dd>
+            <h6 ng-bind="author.name"></h6>
+            <p ng-bind="author.editor_notes"></p>
+        </dd>
+    </dl>
+
+    <h4 class="hot">热门作者</h4>
+    <dl  ng-repeat="(key,author) in datalist1" ui-sref="author.detail({id:key})">
+        <dt><img src="../images/tabIcon/author_1.png" alt=""></dt>
+        <dd>
+            <h6 ng-bind="author.name"></h6>
+            <p ng-bind="author.editor_notes"></p>
+        </dd>
+    </dl>
+</div>

@@ -1,0 +1,36 @@
+<div class="author-header">
+    <img src="../images/tabIcon/author_1.png" alt="">
+    <h6 ng-bind="detail.name"></h6>
+    <p ng-bind="detail.resume"></p>
+    <div>
+        <div class="loading" ng-if="isloading"><img src="../images/tabIcon/loading.gif"></div>
+        <div class="home" ng-repeat="(key,data) in datalist" ui-sref="author.detail.articalDetail({id:key})">
+
+            <!--小标题-->
+            <p class="small-header" ng-bind="data.column.name" ng-if="data.column.name"></p>
+            <!--大标题-->
+            <h4 ng-bind="data.title"></h4>
+            <!--state1只有一段文字-->
+            <div class="state1" ng-if="data.display_style==10001">
+                <p ng-bind="data.abstract"></p>
+            </div>
+            <!--state2只有一段文字和图片-->
+            <div class="state2" ng-if="data.display_style==10002">
+                <p ng-bind="data.abstract"></p>
+                <img src="images/tabIcon/post_1.png" alt="">
+            </div>
+            <!--state3三张图片-->
+            <div class="state3" ng-if="data.display_style==10003">
+                <ul>
+                    <li><img src="images/tabIcon/post_3.png" alt=""></li>
+                    <li><img src="images/tabIcon/post_4.png" alt=""></li>
+                    <li><img src="images/tabIcon/post_5.png" alt=""></li>
+                </ul>
+            </div>
+            <!--state3只有一张大图-->
+            <div class="state4" ng-if="data.display_style==10004">
+                <img src="images/tabIcon/post_2.png">
+            </div>
+        </div>
+    </div>
+</div>
