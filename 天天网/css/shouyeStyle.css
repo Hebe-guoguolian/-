@@ -1,0 +1,887 @@
+/*轮播图*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+.banner .pics{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.banner .pics li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.banner .pics li img{
+    width: 100%;
+    height: 100%;
+}
+.banner .point{
+    width: 200px;
+    height: 16px;
+    position: absolute;
+    bottom: 8px;
+    left: 44%;
+    z-index:999;
+}
+.banner .point li{
+    width: 14px;
+    height: 14px;
+    background: #757795;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+}
+.banner .point li.cur{
+    background: #EC1A5B;
+}
+/*轮播图底部四个东西*/
+.banner-bottom {
+    width: 100%;
+    height: 88px;
+    margin-top: 10px;
+}
+.banner-bottom .banner-bottom_in{
+    width: 1090px;
+    height: 100%;
+    margin:0 auto;
+}
+.banner-bottom li{
+    width: 20%;
+    height: 100%;
+    float: left;
+    margin-right: 70px;
+}
+.banner-bottom li:last-child{
+    margin-right: 0px;
+}
+.banner-bottom li span{
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    background: url("../images/banner-bottom.png");
+    position: relative;
+    top: 10px;
+}
+.banner-bottom li a{
+    text-decoration: none;
+}
+.banner-bottom li a p{
+    display: inline-block;
+    color: #9B9B9B;
+    line-height: 24px;
+    font-size: 12px;
+    margin-left: 5px;
+    text-align: left;
+}
+.banner-bottom li a p em{
+    font-style: normal;
+    color: #333333;
+    font-size: 14px;
+}
+.banner-bottom li a p b{
+    font-weight: 400;
+}
+.banner-bottom li:nth-child(2) span{
+    background-position: -63px 0px;
+}
+.banner-bottom li:nth-child(3) span{
+    background-position: -124px 0px;
+}
+.banner-bottom li:nth-child(4) span{
+    background-position: -189px 0px;
+}
+.banner-bottom li:nth-child(1):hover span{
+    background-position: 0px -64px;
+}
+.banner-bottom li:nth-child(2):hover span{
+    background-position: -63px -64px;
+}
+.banner-bottom li:nth-child(3):hover span{
+    background-position: -124px -64px;
+}
+.banner-bottom li:nth-child(4):hover span{
+    background-position: -189px -64px;
+}
+
+/*
+************************************正文商品内容
+*/
+#main{
+    width: 100%;
+    height: 6550px;
+    background: #F4F4F4;
+    overflow: hidden;
+}
+#main .main_in{
+    width: 1090px;
+    height: 100%;
+    margin: 45px auto;
+}
+/***********************专题精选*/
+.zhuanti{
+    width: 100%;
+    height: 630px;
+}
+.zhuanti h2,.jinri h2{
+    display: inline-block;
+    width: 200px;
+    color:#333333;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.zhuanti h2 span,.jinri h2 span{
+    color: #EC3461;
+}
+.zhuanti h2 b,.jinri h2 b{
+    font-style: normal;
+    font-size: 14px;
+    font-weight: normal;
+    position: relative;
+    top: -3px;
+}
+.zhuanti .redLine,.jinri .redLine,.pinpai .redLine,.today .redLine{
+    width: 112px;
+    height: 1px;
+    background: #ED1D61;
+    position: relative;
+    top: 1px;
+}
+.zhuanti ul{
+    width: 100%;
+    height: 530px;
+    margin-top: 30px;
+}
+.zhuanti ul li{
+    width: 540px;
+    height: 260px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+.zhuanti ul li:nth-child(2){
+    margin-right: 0px;
+}
+.zhuanti ul li:nth-child(4){
+    margin-right: 0px;
+ }
+.zhuanti ul li img{
+    width: 540px;
+    height: 260px;
+    transition: all 0.3s;
+}
+.zhuanti ul li:hover img{
+    width: 570px;
+    height: 274px;
+    margin-left: -15px;
+    margin-top: -7px;
+}
+
+/********************1小时闪购*/
+.oneHour{
+    width: 100%;
+    height: 510px;
+}
+.oneHour h2{
+    display: inline-block;
+    width: 310px;
+}
+.oneHour h2 span{
+    display: inline-block;
+    width: 114px;
+    height: 27px;
+    background: url("../images/home_ico.png") 0 -124px;
+}
+.oneHour b{
+    font-style: normal;
+    font-size: 14px;
+    font-weight: normal;
+    position: relative;
+    top: -10px;
+}
+.oneHour .time{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    color: #999;
+    font-weight: 600;
+    font-size: 15px;
+}
+.oneHour .time i{
+    display: inline-block;
+    width: 23px;
+    height: 29px;
+    background: url("../images/home_ico.png") -1px -312px;
+    margin-right: 6px;
+}
+.oneHour .time span{
+    display: inline-block;
+    width: 27px;
+    height: 24px;
+    background: #999999;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    top: -5px;
+}
+.oneHour .time span:last-child{
+    width: 20px;
+}
+.oneHour .redLine2{
+    display: inline-block;
+    width: 112px;
+    height: 1px;
+    background: #ED1D61;
+    position: relative;
+    top: 7px;
+    left: -520px;
+}
+.status{
+    width: 350px;
+    float: right;
+}
+.status a{
+    display: inline-block;
+    width: 85px;
+    height: 27px;
+    margin-left: 24px;
+}
+.status a li{
+    width: 85px;
+    float: left;
+    font-size: 14px;
+    height: 32px;
+    color: #333;
+    text-align: center;
+}
+.status a li i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/home_ico.png") no-repeat;
+    position: relative;
+    top: 5px;
+    margin-right: 3px;
+}
+.status a:nth-child(1) li i{
+    background-position: -147px -372px;
+}
+.status a:nth-child(2) li i{
+    background-position: 0px -402px;
+}
+.status a:nth-child(3) li i{
+    background-position: 0px -431px;
+}
+.status a:nth-child(1) li{
+    border-bottom: 2px solid #ED1D61;
+    color: #ED1D61;
+}
+.status a:nth-child(2):hover li i{
+    background-position: -147px -402px;
+}
+.status a:nth-child(3):hover li i{
+    background-position: -147px -431px;
+}
+.status a:hover li{
+    color: #ED1D61;
+}
+.shangou li{
+    width: 351px;
+    height: 445px;
+    background: #FEFEFE;
+    margin-right: 12px;
+    float: left;
+    margin-top: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.shangou li:last-child{
+    margin-right: 0;
+}
+.shangou li dl dd>span{
+    font-weight: 600;
+    color: #ed145b;
+}
+.shangou li dl>a{
+    width: 100%;
+    height: 100%;
+}
+.shangou li dl dd .price{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+.shangou li dl dd .price .box1{
+    display: inline-block;
+    width: 100px;
+    float: left;
+}
+.shangou li dl dd .price .box1 em{
+    font-style: normal;
+    color: #ed145b;
+    font-size: 18px;
+}
+.shangou li dl dd .price .box1 del{
+    color: #999999;
+}
+.shangou li dl dd .price .box2{
+    display: inline-block;
+    width: 180px;
+    float: right;
+    color: #666666;
+}
+.shangou li dl dd .price .box2 em{
+    font-style: normal;
+    color: #d1a36a;
+}
+.shangou li dl dd .price .box2 a{
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    background:url("../images/home_ico.png") -1px -534px;
+    vertical-align: middle;
+}
+
+/*今日爆款*/
+.jinri {
+    width: 100%;
+    height: 2300px;
+    margin-top: 30px;
+}
+.jinri h2{
+    width: 205px;
+    height: 23px;
+}
+.jinri h2 span{
+    display: inline-block;
+    width: 100px;
+    height: 23px;
+    background: url("../images/home_ico.png") 0 -170px;
+}
+.jinri .jinriGoods{
+    width: 1090px;
+    height: 100%;
+}
+.jinri li{
+    cursor: pointer;
+}
+.jinri .jinriGoods li:nth-child(1){
+    width: 1090px;
+    height: 350px;
+    margin-top: 20px;
+    background: url("../images/jinri1.jpg");
+    position: relative;
+}
+.jinri .jinriGoods li:nth-child(2){
+    width: 1090px;
+    height: 350px;
+    margin-top: 20px;
+    background: url("../images/jinri2.jpg");
+    position: relative;
+}
+.jinri .jinriGoods li:nth-child(3){
+    width: 1090px;
+    height: 350px;
+    margin-top: 20px;
+    background: url("../images/jinri3.jpg");
+    position: relative;
+}
+.jinri .jinriGoods li:nth-child(4){
+    width: 1090px;
+    height: 350px;
+    margin-top: 20px;
+    background: url("../images/jinri4.jpg");
+    position: relative;
+}
+.jinri .jinriGoods li:nth-child(5){
+    width: 1090px;
+    height: 350px;
+    margin-top: 20px;
+    background: url("../images/jinri5.jpg");
+    position: relative;
+}
+.jinri .jinriGoods li:nth-child(6){
+     width: 1090px;
+     height: 350px;
+     margin-top: 20px;
+     background: url("../images/jinri6.jpg");
+     position: relative;
+ }
+.jinri .jinriGoods li:hover,.oneHour .shangou li:hover,.today .shangou li:hover{
+    box-shadow: 6px 6px 15px #aaa;
+}
+.jinri .jinriContent{
+    width: 425px;
+    height: 310px;
+    background: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 30px;
+    font-size: 18px;
+}
+.jinri .jinriContent span{
+    color: #FA2B6F;
+}
+.jinri .jinriContent p{
+    color: #7D7D7D;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.jinri .jinriContent .box1{
+    width: 60%;
+    height: 80px;
+    float: left;
+    color: #666666;
+    font-size: 16px;
+}
+.jinri .jinriContent .box1 b{
+    font-style: normal;
+    font-size: 30px;
+    color: #EE125B;
+    font-weight: 400;
+}
+.jinri .jinriContent .box1 del{
+    font-style: normal;
+    font-size: 14px;
+    color: #AAAAAA;
+}
+.jinri .jinriContent .box1 span{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url("../images/home_ico.png") -1px -404px;
+    position: relative;
+    top: 2px;
+}
+.jinri .jinriContent .box1 i{
+    font-style: normal;
+    color: #FA2B6F;
+    font-size: 16px;
+}
+.jinri .jinriContent .box2{
+    width: 40%;
+    height: 80px;
+    float: right;
+}
+.jinri .jinriContent .box2 a{
+    display: inline-block;
+    width: 111px;
+    height: 38px;
+    background: url("../images/home_ico.png") -184px -591px;
+    margin-bottom: 20px;
+}
+.jinri .jinriContent .box2 span{
+    display: block;
+    font-size: 14px;
+    color: #AAAAAA;
+    margin-left: 10px;
+}
+.jinri .jinriContent .box2 span em{
+    font-style: normal;
+    color: #B9966A;
+    font-size: 16px;
+}
+/*品牌闪购*/
+.pinpai{
+    width: 100%;
+    height: 1033px;
+    background: #fff;
+    padding: 40px 10px 20px 10px;
+}
+.pinpai h2,.today h2{
+    display: inline-block;
+    width: 250px;
+    height: 27px;
+}
+.pinpai h2 em{
+    display: inline-block;
+    width: 100px;
+    height: 27px;
+    background: url("../images/home_ico.png") 0 -219px;
+}
+.pinpai h2 b,.today h2 b{
+    display: inline-block;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    top: -10px;
+}
+.pinpai span{
+    float: right;
+    font-size: 14px;
+}
+.pinpai span a b{
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    background: url("../images/home_ico.png") 0 -584px;
+    position: relative;
+    top: 2px;
+}
+.pinpai span a:hover{
+    color: #FA2B6F;
+}
+.pinpai .pinpaiGoods{
+    width: 100%;
+    height: 960px;
+    margin-top: 20px;
+}
+.pinpai .pinpaiGoods li{
+    width: 356px;
+    height: 315px;
+    float: left;
+    padding: 10px;
+    border-right:1px solid #f4f4f4;
+    border-bottom:1px solid #f4f4f4;
+    position: relative;
+}
+.pinpai .pinpaiGoods li p{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 26px
+}
+.pinpai .pinpaiGoods li p em{
+    font-style: normal;
+    font-size: 18px;
+    color:#000;
+}
+.pinpai .pinpaiGoods li p b{
+    font-style: normal;
+    font-size: 18px;
+    color: #ee1479;
+    font-weight: 400;
+}
+.pinpai .pinpaiGoods li span{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    color: #666666;
+}
+
+/*今日闪购*/
+.today {
+    width: 100%;
+    height: 1000px;
+    margin-top: 40px;
+}
+.today h2 em{
+    display: inline-block;
+    width: 98px;
+    height: 26px;
+    background: url("../images/home_ico.png") 0 -268px;
+}
+.today .status a:nth-child(1) i{
+    background-position: 0 -620px;
+}
+.today .status a:nth-child(2) i{
+    background-position: 0 -647px;
+}
+.today .status a:nth-child(3) i{
+    background-position: 0 -680px;
+}
+.today .status a:nth-child(1):hover i{
+    background-position: -129px -620px;
+}
+.today .status a:nth-child(2):hover i{
+    background-position: -129px -647px;
+}
+.today .status a:nth-child(3):hover i{
+    background-position: -129px -680px;
+}
+
+.today .shangou .price .box2 a{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    color:#fff;
+    background: #f52065;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+/*右边的黑框*/
+.right-black{
+    width: 38px;
+    height: 768px;
+    background: #000;
+    position: fixed;
+    right:0;
+    top:0;
+    text-align: center;
+}
+.right-black>li{
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.right-black>li:hover{
+    background: #f71470;
+}
+.right-black li:hover p{
+    display: block;
+}
+.right-black .user{
+    width: 38px;
+    height: 38px;
+    margin-top: 100px;
+    margin-left: -1px;
+}
+.right-black .user span,.discount span,.erweima span,.phone span{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url("../images/right-nav-bg.png");
+    margin-top: 6px;
+}
+.right-black .shopping{
+    width: 38px;
+    height: 122px;
+    font-size: 12px;
+}
+.right-black .shopping span{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url("../images/right-nav-bg.png") 0 -29px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+}
+.right-black .shopping b{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ed145b;
+    line-height: 20px;
+    margin-top: 8px;
+}
+.discount {
+    width: 38px;
+    height: 160px;
+    background: #f71470;
+    font-size: 14px;
+    font-family:"宋体";
+    padding-top:12px;
+}
+.discount span{
+    background-position: 0 -87px;
+}
+.discount i{
+    display: inline-block;
+    transform: rotate(90deg);
+}
+.right-black .love,.foots,.erweima{
+    width: 38px;
+    height: 38px;
+}
+.right-black .love span{
+    display: inline-block;
+    width: 21px;
+    height: 19px;
+    background: url("../images/right-nav-bg.png") 0 -117px;
+    margin-top: 10px;
+}
+.right-black .foots span{
+    display: inline-block;
+    width: 26px;
+    height: 28px;
+    background: url("../images/right-nav-bg.png") 0 -144px;
+    margin-top: 6px;
+}
+.right-black .erweima{
+    margin-top: 42px;
+    position: relative;
+}
+.right-black .erweima span{
+    background-position: 0 -175px;
+}
+.right-black .phone,.right-black .toTop{
+    width: 38px;
+    height: 38px;
+}
+.right-black .phone span{
+    background-position: 0 -203px;
+}
+.right-black .toTop span{
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    background:url("../images/right-nav-bg.png") 0 -235px;
+    margin-top: 10px;
+}
+.right-black li p {
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    background: #666;
+    position: absolute;
+    left: -100px;
+    top: 0;
+    display: none;
+    text-align: center;
+    line-height: 38px;
+    font-size: 12px;
+}
+.right-black .user .user_in{
+    display: block;
+    width: 285px;
+    height: 200px;
+    background: #fff;
+    position: absolute;
+    left: -285px;
+    top: -6px;
+    display: none;
+    padding: 10px;
+    text-align: center;
+}
+.right-black .user_in .close{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/right-nav-bg.png") -30px -30px;
+    float: right;
+}
+.right-black .user_in i{
+    display: inline-block;
+    width: 73px;
+    height: 73px;
+    background: url("../images/user-head.jpg") -12px -8px;
+    border-radius:50%;
+    margin-top: 10px;
+    transform: scale(0.7);
+}
+.right-black .user_in em{
+    display: block;
+    height: 34px;
+    color: #333;
+    font-size: 14px;
+    border-bottom:1px dashed #ccc;
+    font-style: normal;
+}
+.right-black .user_in em a{
+    color: #ed145b;
+}
+.right-black .mydes{
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.right-black .mydes:hover{
+    border:1px solid #fccadb;
+}
+.right-black .erweima i{
+    display: inline-block;
+    width: 168px;
+    height: 195px;
+    background: #fff;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    left: -168px;
+    top: -157px;
+}
+.right-black .erweima i em{
+    display: inline-block;
+    width: 148px;
+    height: 175px;
+    background: url("../images/ewm.png");
+}
+.right-black .erweima:hover i{
+    display: block;
+}
+
+/*左侧导航*/
+.left-nav {
+    width: 65px;
+    height: 350px;
+    background: #fff;
+    position: fixed;
+    left: 20px;
+    top: 27%;
+    display: none;
+}
+.left-nav li{
+    width: 65px;
+    height: 70px;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+.left-nav li.cur{
+    margin-top: 0;
+    background: #333;
+    color:#fff;
+}
+.left-nav li.cur a{
+    background: url("../images/nav_leftbg2.png");
+}
+.left-nav li a{
+    display: inline-block;
+    width: 65px;
+    height: 45px;
+    background: url("../images/nav_leftbg1.png");
+}
+.left-nav li:nth-child(2) a{
+    background-position: 0 -72px !important;
+}
+.left-nav li:nth-child(3) a{
+    background-position: 0 -144px !important;
+}
+.left-nav li:nth-child(4) a{
+    background-position: 0 -216px !important;
+}
+.left-nav li:nth-child(5) a{
+    background-position: 0 -288px !important;
+}
+.left-nav li:hover{
+    background: #333;
+    color:#fff;
+}
+.left-nav li:hover a{
+    background: url("../images/nav_leftbg2.png")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

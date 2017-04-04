@@ -1,0 +1,111 @@
+/*******************************con*/
+#con{
+    width: 1090px;
+    height: 6280px;
+    margin:0 auto;
+}
+#con h3{
+    width: 1090px;
+    height: 50px;
+    line-height:50px;
+    background: url("../images_brank 2/pp_tm.png") no-repeat left 10px;
+    border-bottom: 1px dashed #EC3461;
+    padding-left:93px;
+    color:#EC3461;
+    font-size:28px;
+    font-weight:bolder;
+}
+#con h3 i{
+    font-style: normal;
+    font-weight:normal;
+}
+
+#con .right{
+    width: 248px;
+    height: 500px;
+    float: right;
+    margin-right:100px;
+    margin-top:20px;
+}
+#con .right .right-top{
+    width: 248px;
+    height: 320px;
+    border:1px solid #EC3461;
+    border-top:none;
+}
+#con .right .right-top img{
+    vertical-align: top;
+}
+#con .right .right-bottom{
+    margin-top:20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+#con .right .right-bottom ul{
+    overflow: hidden;
+    padding:0 5px;
+    text-align: center;
+    margin-top:-4px;
+}
+#con .right .right-bottom ul a li{
+    width: 115px;
+    height: 65px;
+    float: left;
+    border-bottom: 1px dashed #EC3461;
+    background: url("../images_brank 2/vichy.jpg");
+}
+#con .right .right-bottom ul a:hover li{
+    border-bottom:1px solid #EC3461;
+}
+#con .right .right-bottom ul a:nth-of-type(2) li{
+    background: url("../images_brank 2/meiji.jpg") no-repeat;
+}
+#con .right .right-bottom ul a:nth-of-type(3) li{
+    background: url("../images_brank 2/elizabetharden.jpg") no-repeat;
+}
+#con .right .right-bottom ul a:nth-of-type(5) li{
+    background: url("../images_brank 2/beloved.jpg") no-repeat;
+}
+#con .right .right-bottom ul a:nth-of-type(4) li{
+    background: url("../images_brank 2/shuuemura.jpg") no-repeat;
+}
+#con .right .right-bottom ul a:nth-of-type(6) li{
+    background: url("../images_brank 2/sitafu_08.jpg") no-repeat;
+}
+#con .right .right-bottom ul a:nth-of-type(7) li{
+    background: url("../images_brank 2/missha-logo.jpg") no-repeat;
+}
+#con .right .right-bottom ul a:nth-of-type(8) li{
+    background: url("../images_brank/kans.jpg") no-repeat;
+}
+#con .right .weibo{
+    margin-top:20px;
+}
+#fix .kefu{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: url("../images_brank 2/backtop.png") no-repeat 0 -105px;
+    position: fixed;
+    right:80px;
+    bottom:80px;
+}
+#fix .survey{
+    position: fixed;
+    right:150px;
+    bottom: 130px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

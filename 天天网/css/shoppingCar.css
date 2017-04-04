@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 28px;
+    border-bottom:1px solid #E6E6E6;
+    line-height: 28px;
+    color: #828282;
+    font-size: 12px;
+    font-family:"宋体";
+    background: #F9F9F9;
+}
+header .header_in{
+    width: 1000px;
+    height: 28px;
+    margin: 0 auto;
+}
+header .header_in a{
+    color: #828282;
+}
+header .header_in a:hover{
+    color: #F51972;
+}
+header .header_in .left{
+    float: left;
+}
+header .header_in .right{
+    float: right;
+}
+header .header_in .right b{
+    color: #FF6EBD;
+    font-size: 14px;
+}
+.main{
+    width: 998px;
+    height: 339px;
+    border:1px solid #E6E6E6;
+    margin:10px auto;
+}
+.main .logo{
+    height: 97px;
+    border-bottom: 3px solid #646464;
+}
+.main .status{
+    width: 948px;
+    height: 148px;
+    background: #F9F9F9;
+    margin:20px auto;
+    border: 1px solid #E6E6E6;
+}
+.main .status .des{
+    width: 384px;
+    height: 46px;
+    margin: 50px 220px;
+    font-size: 12px;
+}
+.main .status .des span{
+    display: inline-block;
+    width: 50px;
+    height: 46px;
+    background: url("images/car_04.png");
+}
+.main .status .des p{
+    width: 324px;
+    height: 46px;
+    line-height: 20px;
+    display: inline-block;
+    position: relative;
+    top: -12px;
+    left: 7px;
+    color: #5A5A5A;
+    font-family:"宋体";
+}

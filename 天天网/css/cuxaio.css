@@ -1,0 +1,365 @@
+.header-nav .mian-list li:nth-of-type(1) a{
+     color:#EC3461;
+}
+.header-nav .mian-list li:nth-of-type(1) span{
+    width: 100%;
+    left:0;
+}
+.header-nav .mian-list li:nth-of-type(4) a{
+     color:#000;
+}
+.header-nav .mian-list li:nth-of-type(4) span{
+    width: 0%;
+    left:0;
+}
+/*banner*/
+#banner{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+#banner div{
+    width: 2500px;
+    height: 175px;
+    vertical-align: top;
+    position: absolute;
+     left:50%;
+    margin-left:-1250px;
+    z-index:2;
+}
+#banner div:nth-of-type(1){
+    background: url("../images-cuxiao/banner-1.jpg");
+}
+#banner div:nth-of-type(2){
+    background: url("../images-cuxiao/banner-2.jpg");
+    top:175px;
+}
+#banner div:nth-of-type(3){
+    background: url("../images-cuxiao/banner-3.jpg");
+    top:350px;
+}
+#banner div:nth-of-type(4){
+    background: url("../images-cuxiao/banner-4.jpg");
+    top:525px;
+}
+/*con*/
+#con{
+    width: 100%;
+    height: 7060px;
+    background: #e6d1fc;
+}
+.conIn{
+    width: 1000px;
+    height: 7060px;
+    margin:0 auto;
+}
+.conIn .quan{
+    width: 1000px;
+    height: 240px;
+}
+.conIn .quan a{
+    display:block;
+    float: left;
+    overflow: hidden;
+}
+.special-area{
+    margin-top:20px;
+}
+.special-area h2{
+    width: 1000px;
+    height:120px;
+    background: url("../images-cuxiao/tit-1.jpg") no-repeat;
+    text-indent: -99999px;
+}
+.special-area ul{
+    overflow: hidden;
+}
+.special-area ul li{
+    width: 240px;
+    height: 360px;
+    background: #fff;
+    float: left;
+    position: relative;
+    padding:10px;
+    margin-top:15px;
+    margin-right:13px;
+}
+#con ul li:nth-child(4n){
+    margin-right:0px;
+}
+.special-area ul li .s1{
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: #EC3461;
+    color:#fff;
+    font-size:14px;
+    padding:2px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.special-area ul li .image {
+    width: 240px;
+    height: 200px;
+    display: block;
+    text-align: center;
+    margin-top:20px;
+}
+.special-area ul li .img-des{
+    font-size:14px;
+    color:#333;
+    overflow: hidden;
+}
+.special-area ul li .press{
+    margin-top:15px;
+    font-weight:normal;
+    cursor: pointer;
+}
+.special-area ul li .press .s3{
+    color:#EC3461;
+    font-size:24px;
+    float: left;
+}
+.special-area ul li .press .s4{
+    color:#999;
+    font-size:18px;
+    float: right;
+    text-decoration: line-through;
+    margin-top:5px;
+}
+.special-area ul li .press p{
+    color:#999;
+    font-size:18px;
+    float: left;
+    margin-top:5px;
+}
+.special-area ul li button{
+    width:240px;
+    height:40px;
+    background:#EC3461;
+    color:#fff;
+    text-align: center;
+    line-height:40px;
+    margin-top:5px;
+    margin-left:-10px;
+    display: none;
+}
+.free h2{
+    width: 1000px;
+    height:120px;
+    background: url("../images-cuxiao/tit-2.jpg") no-repeat;
+    text-indent: -99999px;
+}
+.free ul,.pay ul{
+    overflow: hidden;
+}
+.free ul li,.pay ul li{
+    width: 240px;
+    height: 335px;
+    background: #fff;
+    float: left;
+    position: relative;
+    padding:10px;
+    margin-top:15px;
+    margin-right:13px;
+}
+.free ul li .s1,.pay ul li .s1{
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: #EC3461;
+    color:#fff;
+    font-size:14px;
+    padding:2px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.free ul li .image,.pay ul li .image {
+    width: 240px;
+    height: 200px;
+    display: block;
+    text-align: center;
+    margin-top:20px;
+}
+.free ul li .img-des,.pay ul li .img-des{
+    font-size:14px;
+    color:#333;
+    overflow: hidden;
+}
+.free ul li .press,.pay ul li .press{
+    margin-top:15px;
+    font-weight:normal;
+    cursor: pointer;
+}
+.free ul li .press .s3,.pay ul li .press .s3{
+    color:#EC3461;
+    font-size:24px;
+    float: left;
+}
+.free ul li .press .s4,.pay ul li .press .s4{
+    color:#999;
+    font-size:18px;
+    float: right;
+    text-decoration: line-through;
+    margin-top:5px;
+}
+.free ul li button,.pay ul li button{
+    width:240px;
+    height:40px;
+    background:#EC3461;
+    color:#fff;
+    text-align: center;
+    line-height:40px;
+    margin-top:5px;
+    margin-left:-10px;
+    display: none;
+}
+.pay h2{
+    width: 1000px;
+    height:120px;
+    background: url("../images-cuxiao/tit-3.jpg") no-repeat;
+    text-indent: -99999px;
+}
+/*con-footer*/
+#con-footer{
+    width: 100%;
+    height: 605px;
+}
+#con-footer h3{
+    width: 1000px;
+    height: 62px;
+    margin:0 auto;
+    background: url("../images-cuxiao/boT3.jpg") no-repeat;
+    text-indent: -9999px;
+}
+#con-footer dl{
+    width: 1000px;
+    height: 545px;
+    margin:0 auto;
+}
+#con-footer dl a dt{
+    width: 380px;
+    height: 250px;
+    background: url("../images-cuxiao/01.jpg") no-repeat;
+    float: left;
+    margin-right:10px;
+    margin-top:10px;
+}
+#con-footer dl a dd{
+    width: 185px;
+    height: 250px;
+    background: url("../images-cuxiao/02.jpg") no-repeat;
+    float: left;
+    margin-right:10px;
+    margin-top:10px;
+}
+#con-footer dl a:nth-of-type(3) dd{
+    background: url("../images-cuxiao/03.jpg") no-repeat;
+}
+#con-footer dl a:nth-of-type(4) dd{
+    background: url("../images-cuxiao/04.jpg") no-repeat;
+}
+#con-footer dl a:nth-of-type(5) dd{
+    background: url("../images-cuxiao/05.jpg") no-repeat;
+}
+#con-footer dl a:nth-of-type(6) dd{
+    background: url("../images-cuxiao/06.jpg") no-repeat;
+}
+#con-footer dl a:nth-of-type(7) dd{
+    background: url("../images-cuxiao/07.jpg") no-repeat;
+}
+#con-footer dl a:nth-of-type(8) dd{
+    background: url("../images-cuxiao/08.jpg") no-repeat;
+}
+#con-footer dl a:nth-of-type(9) dd{
+    background: url("../images-cuxiao/09.jpg") no-repeat;
+}
+/*固定定位*/
+.fixed-left{
+    width: 120px;
+    height: 480px;
+    position: fixed;
+    left:50px;
+    top:75px;
+    z-index:10;
+    background: url("../images-cuxiao/top-img.png") no-repeat;
+    padding-top:120px;
+    text-align: center;
+    display: none;
+}
+.fixed-left ul li{
+    width: 110px;
+    height: 30px;
+    background: url("../images-cuxiao/bg1.png") no-repeat;
+    margin-bottom:10px;
+    line-height:30px;
+}
+.fixed-left ul li:hover{
+    background: url("../images-cuxiao/bg2.png") no-repeat;
+}
+.fixed-left ul li:hover a{
+    color:#2b2b2b;
+}
+.fixed-left ul li a{
+    color:#fff;
+    font-size:14px;
+    width: 110px;
+    height: 30px;
+}
+.fixed-left p{
+    width: 110px;
+    height: 110px;
+    background: url("../images-cuxiao/ewm.jpg") no-repeat;
+}
+.fixed-left span{
+    width: 100px;
+    height: 30px;
+    display: block;
+    margin-top:10px;
+    background: url("../images-cuxiao/close2.png") no-repeat;
+}
+.fixed-right{
+    width: 110px;
+    height: 125px;
+    position: fixed;
+    right:50px;
+    top:75px;
+    z-index:10;
+    text-align: center;
+    display: none;
+}
+.fixed-right ul li{
+    width: 110px;
+    height: 30px;
+    background: #A977E6;
+    margin-bottom:2px;
+    line-height: 30px;
+    color:#fff;
+}
+.fixed-right .s1{
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: url("../images-cuxiao/backtop.png") 0 -105px;
+    margin-top:320px;
+    margin-left:80px;
+}
+.fixed-right .s1:hover{
+    background-position-y:-157px;
+}
+.fixed-right .s2:hover{
+    background-position-y:0px;
+}
+.fixed-right .s2{
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: url("../images-cuxiao/backtop.png") 0 -52px;
+    margin-top:10px;
+    margin-left:80px;
+}
+
+
